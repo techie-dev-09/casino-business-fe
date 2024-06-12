@@ -1,0 +1,110 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.file-upload-form {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-upload-label input {
+  display: none;
+}
+.file-upload-label svg {
+  height: 20px;
+  fill: rgb(82, 82, 82);
+  margin-right: 2px;
+  margin-bottom: 1px;
+}
+.file-upload-label {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px dashed rgb(82, 82, 82);
+  box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+}
+.file-upload-design {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.browse-button {
+  background-color: rgb(82, 82, 82);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+.browse-button:hover {
+  background-color: rgb(14, 14, 14);
+}
+
+/* The switch - the box around the slider */
+.switch-fun-mode {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch-fun-mode input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider-fun-mode {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(182, 182, 182);
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.slider-fun-mode:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.switch-fun-mode input:checked + .slider-fun-mode {
+  background-color: #21cc4c;
+}
+
+.switch-fun-mode input:focus + .slider-fun-mode {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch-fun-mode input:checked + .slider-fun-mode:before {
+  transform: translateX(1.5em);
+}
+
+.overlay-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(143, 143, 143, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
